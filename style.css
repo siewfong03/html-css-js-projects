@@ -57,9 +57,16 @@ padding: 2rem;
     display: flex;
     justify-content: space-between;
     color: #737373;
+    
     margin-bottom: 1.5rem;
+    
 }
 
+#currentQues-subText{
+    color: #5c5c5c;
+    padding-bottom: 1rem;
+     
+}
 .ans-container {
     display: flex;
     flex-direction: column;
@@ -105,11 +112,12 @@ padding: 2rem;
 .result-inner img{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 100%;
 }
 
 button{
     background-color: #ACBBF9;
-    padding: 16px 64px;
+    padding: 1rem 4rem;
     border-radius: 5rem;
     font-size: 1rem;
     border:1px solid #000;
@@ -139,4 +147,31 @@ button:active{
 .answer-btn.incorrect{
     background-color: #FFC3BF;
     color: #FF0000;
+}
+
+
+@media (max-width: 600px) {
+    #start-screen img{ 
+    width: 50%;
+ 
+}
+
+button {
+    padding: 0.5rem 2rem;
+}
+
+.container{
+    padding: 1rem; 
+}
+
+h1{
+    font-size: 1.5rem ;
+}
+p{
+    font-size: 1rem;
+}
+
+.result-msg{
+    font-size: 0.8rem;
+}
 }
