@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>friendship quiz</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="container">
+
+        <div class="screen active" id="start-screen">
+            <h1>Let’s See If You’re Just Vibes or Ride or Die 😌</h1>
+            <img src="img/img1.png" alt="cute me">
+            <p>Answer wrong? I’ll silently judge you <br>
+                Answer right? You might be my soulmate fr 💖</p>
+        
+            <button id="start-button" class="button">
+             Let's start!!</button>
+        </div>
+
+        <div class="screen " id="quiz-screen">
+            
+            <div class="question-header">
+            
+            <div class="question-main">
+            <h2 id="quiz-question">Question</h2>
+            <p id="currentQues-subText">(you can’t go wrong with this one sis)</p>
+            </div>
+            
+            <div class="question-info">
+            <p>
+            Question <span id="current-question-number">1</span> of <span id="total-questions">5</span>
+            </p>
+            <p>Score: <span id="score">5</span></p>
+             </div>
+            
+            </div>
+
+             <div id="ans-container" class="ans-container">
+
+             </div>
+
+             <div class="progress-container">
+             <div id="progress-bar" class="progress-bar"></div>
+            </div>
+
+        </div>
+
+        <div class="screen" id="result-screen">
+            <h1>Your Results Are In 🤓📉</h1>
+            
+            <div id="result-inner" class="result-inner">
+                <p>You score <span id="user-result">3</span> out of <span id="total-questions">5</span> </p>
+                <img src="img/img2.png" alt="cute you">
+                <p id="result-msg">ok la not bad… but not bestie level 😮‍💨 you mid 😭</p>
+            </div>
+
+            <button id="restart-button" class="button">Restart</button>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
